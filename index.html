@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html >
+<html lang="en" ng-app="app">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,24 +9,35 @@
 
     <!-- Bootstrap -->
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
-    <div class="container" ng-app>
-        <form class="form-signin">
-            <h2 class="form-signin-heading">What you type here:</h2>
+    <div id="wrapper">
+        <div id="header">
+            <div id="top-row"> 
+                <div id="container">
+                    <img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAlzAAAAJGNiYTliN2ZkLWNkYTktNDBiNi04OWNjLWVjYmIyMDk3ZTM1Yg.jpg" />
+                </div>
+                <div id="title">
+                    <a href="http://deyandimov.com">
+                    <h2>Deyan Dimov</h2>
+                    <h4>Front-End Developer</h4>
+                    </a>
+                    
+                </div>
+            </div>
+            <div ng-include="'app/shared/navigation/navigation.html'">
+            </div>
+        </div>
+    
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
-            <input ng-model="data.input" type="text" class="form-control" autofocus>
-
-            <h2 class="form-signin-heading">It will also be shown below:</h2>
-            <input type="text" class="sr-only">{{data.input}}</label>
-        </form>
-    </div>
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-
-    <script src="bower_components/angular/angular.min.js"></script>
+        <script src="bower_components/angular/angular.min.js"></script>
+        <script src="app/app.module.js"></script>
+        <script src="app/shared/navigation/navigation.controller.js"></script>
+        </div>
 </body>
 </html>

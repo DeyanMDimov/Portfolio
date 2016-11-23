@@ -1,0 +1,38 @@
+#wrapper{
+    width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    margin-top:150px;
+}
+
+#top-row #container{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    float: left;
+    
+}
+
+#top-row img{
+    width: 130px;
+    margin-left: -17px;
+    filter: blur(3px);
+}
+
+#title{
+    padding: 15px 0 0 120px;
+   
+}
+
+#title a{
+    color: #000;
+   
+}
+
+#title a:hover{
+    text-decoration: none;
+    color: #000;
+}
+
